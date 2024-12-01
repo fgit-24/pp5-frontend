@@ -1,12 +1,13 @@
 function FirstComponent(props) {
+  function clickMe() {
+    alert("Iam inside a functional component");
+  }
+
   return (
-    <>
-      <h1>
-        My name is: {props.name} My lastname: {props.lastname}
-      </h1>
-      ;
-    </>
+    <div>
+      <h2>My Name is {props.name}</h2>
+      <button onClick={clickMe}>Click Me</button>
+    </div>
   );
 }
-
 export default FirstComponent;
