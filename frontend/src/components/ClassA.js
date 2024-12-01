@@ -9,7 +9,9 @@ class ClassA extends Component {
     return (
       <div>
         <h3>This is my {this.props.email}</h3>
-        <button onClick={this.clickMe}>Click for Email</button>
+        <button className="btn btn-danger" onClick={this.clickMe}>
+          Click for Email
+        </button>
       </div>
     );
   }

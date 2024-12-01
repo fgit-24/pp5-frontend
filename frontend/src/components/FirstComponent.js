@@ -4,10 +4,12 @@ function FirstComponent(props) {
   }
 
   return (
-    <div>
+    <di className="container mt-5">
       <h2>My Name is {props.name}</h2>
-      <button onClick={clickMe}>Click Me</button>
-    </div>
+      <button className="btn btn-success" onClick={clickMe}>
+        Click Me
+      </button>
+    </di>
   );
 }
 export default FirstComponent;
