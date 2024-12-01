@@ -5,12 +5,25 @@ export class StateExample extends Component {
     super();
 
     this.state = {
-      name: "Florian",
+      name: "Test",
     };
   }
 
+  handleClick = () => {
+    this.setState({ name: "Another Name" });
+  };
+
+  handleChange() {}
+
   render() {
-    return <h1>{this.state.name}</h1>;
+    return (
+      <div>
+        <h1>{this.state.name}</h1>
+        <button className="btn btn-primary" onClick={this.handleClick}>
+          Change Text
+        </button>
+      </div>
+    );
   }
 }
 
