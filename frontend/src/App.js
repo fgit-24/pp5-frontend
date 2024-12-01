@@ -1,12 +1,13 @@
+// import logo from "./logo.svg";
 import "./App.css";
 import FirstComponent from "./components/FirstComponent";
-import SecondComponent from "./components/SecondComponent";
+import ClassA from "./components/ClassA";
 
 function App() {
   return (
     <>
-      <FirstComponent />
-      <SecondComponent />
+      <FirstComponent name="Florian" lastname="LastName" />
+      <ClassA email="email@email.com" />
     </>
   );
 }

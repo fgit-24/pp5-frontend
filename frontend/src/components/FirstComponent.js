@@ -1,8 +1,10 @@
-function FirstComponent() {
+function FirstComponent(props) {
   return (
     <>
-      <h1>Welcometo ReactJ@ and DRF</h1>;
-      <FirstComponent />;
+      <h1>
+        My name is: {props.name} My lastname: {props.lastname}
+      </h1>
+      ;
     </>
   );
 }
