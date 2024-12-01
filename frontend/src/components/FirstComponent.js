@@ -1,5 +1,3 @@
-import FirstComponent from "./components/FirstComponent";
-
 function FirstComponent() {
   return (
     <>

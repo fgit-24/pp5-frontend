@@ -1,9 +1,5 @@
 function SecondComponent() {
-  return (
-    <>
-      <h1>Welcometo ReactJ@ and DRF</h1>;
-    </>
-  );
+  return <h1>Second Component</h1>;
 }
 
 export default SecondComponent;

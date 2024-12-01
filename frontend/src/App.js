@@ -1,7 +1,14 @@
 import "./App.css";
+import FirstComponent from "./components/FirstComponent";
+import SecondComponent from "./components/SecondComponent";
 
 function App() {
-  return <h1>Welcome to ReactJS and Drf</h1>;
+  return (
+    <>
+      <FirstComponent />
+      <SecondComponent />
+    </>
+  );
 }
 
 export default App;
