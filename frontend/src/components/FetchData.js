@@ -7,14 +7,21 @@ function FetchData() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((resp) => resp.json())
       .then((result) => {
-        console.log(result);
+        setArticles(result);
       });
   }, []);
 
-  return;
-  <>
-    <FetchData />
-  </>;
+  return (
+    <div>
+      {articles.map((article) => {
+        return (
+          <div>
+            <h1 key={article.id}>{article.title}</h1>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default FetchData;

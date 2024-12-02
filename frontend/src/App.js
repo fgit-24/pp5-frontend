@@ -10,13 +10,14 @@ import Navbar from "./components/Navbar";
 import React from "react";
 import ComponentA from "./components/ComponentA";
 import Counter2 from "./components/Counter2";
+import FetchData from "./components/FetchData";
 
 export const MyContext = React.createContext();
 
 function App() {
   return (
     <>
-      <Counter2 />
+      <FetchData />
     </>
   );
 }
