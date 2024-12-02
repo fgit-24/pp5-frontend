@@ -6,6 +6,16 @@ const Counter2 = () => {
 
   const [info, setInfo] = useState({ name: "", email: "" });
 
+  const [articles, setArticles] = useState([
+    "Article One",
+    "Article Two",
+    "Article Three",
+  ]);
+
+  const addArticle = () => {
+    setArticles([...articles, "New Article"]);
+  };
+
   return (
     <div>
       <h1>{text}</h1>
@@ -29,6 +39,10 @@ const Counter2 = () => {
         onChange={(e) => setInfo({ ...info, name: e.target.value })}
       />
 
+      {articles.map((article) => {
+        return <h3>{article}</h3>;
+      })}
+
       <input
         type="text"
         className="form-control"
@@ -36,6 +50,10 @@ const Counter2 = () => {
         value={info.passsword}
         onChange={(e) => setInfo({ ...info, email: e.target.value })}
       />
+
+      <button onClick={addArticle} className="btn btn-primary">
+        Add Article
+      </button>
     </div>
   );
 };
