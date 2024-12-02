@@ -6,10 +6,12 @@ import ClassA from "./components/ClassA";
 import MapFunc from "./components/MapFunc";
 import Forms from "./components/Forms";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/first" element={<ClassA />}></Route>
         <Route path="/second" element={<Forms />}></Route>
