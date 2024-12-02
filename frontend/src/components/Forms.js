@@ -16,7 +16,7 @@ class Forms extends Component {
           type="text"
           value={this.state.username}
           onChange={(e) => {
-            this.state.setState({ username: e.target.value });
+            this.setState({ username: e.target.value });
           }}
           className="form-control"
           placeholder="Please enter name"
@@ -26,7 +26,7 @@ class Forms extends Component {
           className="form-control"
           value={this.state.password}
           onChange={(e) => {
-            this.state.setState({ password: e.target.value });
+            this.setState({ password: e.target.value });
           }}
           placeholder="Please enter password"
         ></input>
