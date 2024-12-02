@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Counter2 = () => {
   const [counter, setCounter] = useState(0);
@@ -15,6 +15,10 @@ const Counter2 = () => {
   const addArticle = () => {
     setArticles([...articles, "New Article"]);
   };
+
+  useEffect(() => {
+    document.title = `You have clicked ${counter} times!`;
+  });
 
   return (
     <div>
@@ -40,7 +44,7 @@ const Counter2 = () => {
       />
 
       {articles.map((article) => {
-        return <h3>{article}</h3>;
+        return <h3 key={article}>{article}</h3>;
       })}
 
       <input
