@@ -5,15 +5,14 @@ import ClassA from "./components/ClassA";
 // import StateExample from "./components/StateExample";
 import MapFunc from "./components/MapFunc";
 import Forms from "./components/Forms";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <FirstComponent name="Florian" lastname="LastName" />
-      <ClassA email="email@email.com" />
-      {/* <StateExample /> */}
-      <MapFunc names={["Python", "Java", "C#", "C++"]} />
-      <Forms />
+      <Routes>
+        <Route path="/first" element={<ClassA />}></Route>
+      </Routes>
     </>
   );
 }
