@@ -7,16 +7,17 @@ import MapFunc from "./components/MapFunc";
 import Forms from "./components/Forms";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import React from "react";
+import ComponentA from "./components/ComponentA";
+
+export const MyContext = React.createContext();
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/first" element={<ClassA />}></Route>
-        <Route path="/second" element={<Forms />}></Route>
-        <Route path="/third" element={<FirstComponent />}></Route>
-      </Routes>
+      <MyContext.Provider value="This is the data for context">
+        <ComponentA />
+      </MyContext.Provider>
     </>
   );
 }
