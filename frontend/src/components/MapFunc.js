@@ -1,15 +1,12 @@
 import { Component } from "react";
 
 class MapFunc extends Component {
+  myElements = (names) => {
+    return names.map((name) => <div key={name}>{`${name}`}</div>);
+  };
+
   render() {
-    return (
-      <div className="container">
-        <h1>{this.state.name}</h1>
-        <button onClick={() => this.changeBtn()} className="btn btn-primary">
-          Map here
-        </button>
-      </div>
-    );
+    return <h2>{this.myElements(this.props.names)}</h2>;
   }
 }
 
