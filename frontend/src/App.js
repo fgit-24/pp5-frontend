@@ -12,6 +12,8 @@ function App() {
     <>
       <Routes>
         <Route path="/first" element={<ClassA />}></Route>
+        <Route path="/second" element={<Forms />}></Route>
+        <Route path="/third" element={<FirstComponent />}></Route>
       </Routes>
     </>
   );
