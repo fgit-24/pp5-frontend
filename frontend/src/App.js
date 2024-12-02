@@ -17,7 +17,9 @@ export const MyContext = React.createContext();
 function App() {
   return (
     <>
-      <FetchData />
+      <MyContext.Provider value="This is useContext example">
+        <ComponentA />
+      </MyContext.Provider>
     </>
   );
 }

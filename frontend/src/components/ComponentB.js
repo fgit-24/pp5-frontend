@@ -1,16 +1,9 @@
 import { MyContext } from "../App";
+import { useContext } from "react";
 
 const ComponentB = () => {
-  return (
-    <div>
-      <MyContext.Consumer>
-        {(data) => {
-          return <h2>{data}</h2>;
-        }}
-      </MyContext.Consumer>
-      ;
-    </div>
-  );
+  const data = useContext(MyContext);
+  return <h2>{data}</h2>;
 };
 
 export default ComponentB;
