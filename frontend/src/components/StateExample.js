@@ -12,7 +12,7 @@ export class StateExample extends Component {
   handleClick = () => {
     // this.setState({ name: "Another Name" });
     this.setState({
-      name: this.state.name === "Test Again" ? "Test Ok" : "Test Again",
+      name: this.state.name === "Test Againa" ? "Test Ok" : "Test Again",
     });
   };
 
