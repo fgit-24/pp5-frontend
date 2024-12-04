@@ -1,7 +1,7 @@
 function ArticleList(props) {
     return (
         <div>
-            {props.articles.map(article => {
+            {props.articles[0] && props.articles.map(article => {
                 return (
                 <div className="container mt-3" key = {article.id}>
                 <span className="badge rounded-pill bg-success">Author: {article.author}</span>
