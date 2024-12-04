@@ -2,12 +2,13 @@ import React from 'react'
 import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 
+
 function ArticleDetails() {
-    const params = useParamas()
+    const params = useParams()
     const [article, setArticle] = useState({})
     
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/articles/${params.slug}`, {
+        fetch(`http://127.0.0.1:8000/articles/${params.slug}/`, {
             method: "GET",
             headers: {
               "Content-Type" : "application/json",
@@ -15,12 +16,12 @@ function ArticleDetails() {
             },
           })
           .then(resp => resp.json())
-          .then(result => setArticle(resp))
+          .then(result => setArticle(result))
           .catch(error => console.log(error))
     }, [params.slug])
 
   return (
-    <div>details</div>
+    <div className="container">{article.title}</div>
   )
 }
 
