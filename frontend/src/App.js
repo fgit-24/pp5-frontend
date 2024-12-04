@@ -36,7 +36,7 @@ function App() {
         < ArticleList articles = {articles}/>
         }></Route>
 
-        <Route path="/articles/:slug" element = {
+        <Route path="/article/:slug" element = {
           < ArticleDetails />
         }></Route>
       </Routes>
