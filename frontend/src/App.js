@@ -3,6 +3,8 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import ArticleList from "./components/ArticleList";
 import Navbar from "./components/Navbar";
+import {Routes, Route} from 'react-router-dom';
+import Login from "./components/Login";
 
 function App() {
 
@@ -26,7 +28,12 @@ function App() {
   return (
     <div>
       < Navbar />
-      < ArticleList articles = {articles}/>
+      <Routes>
+        <Route path="/" element = {<Login/>}></Route>
+        <Route path="/articles" element = {
+        < ArticleList articles = {articles}/>
+        }></Route>
+      </Routes>
     </div>
   );
 }
