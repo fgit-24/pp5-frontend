@@ -7,17 +7,20 @@ function ArticleDetails() {
     const [article, setArticle] = useState({})
     
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/articles/", {
+        fetch(`http://127.0.0.1:8000/articles/${params.slug}`, {
             method: "GET",
             headers: {
               "Content-Type" : "application/json",
               "Authorization" : "Token 35d93ade08367b58d87f74bff1d3374087b265f2",
             },
           })
-    }, [])
+          .then(resp => resp.json())
+          .then(result => setArticle(resp))
+          .catch(error => console.log(error))
+    }, [params.slug])
 
   return (
-    <div></div>
+    <div>details</div>
   )
 }
 
