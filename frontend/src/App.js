@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
+import ArticleList from "./components/ArticleList";
 
 function App() {
+
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -22,15 +24,7 @@ function App() {
 
   return (
     <div>
-      {articles.map(article => {
-        return (
-        <div className="container mt-3" key = {article.id}>
-          <span className="badge rounded-pill btn btn-success">Author: {article.author}</span>
-          <h2><a className="link-style" href="">{article.title}</a></h2>
-          <p>{article.description}</p>
-        </div>
-        )
-      })}
+      < ArticleList articles = {articles}/>
     </div>
   );
 }
