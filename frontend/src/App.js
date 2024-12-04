@@ -12,7 +12,12 @@ function App() {
         "Content-Type": "application/json",
         Authorization: "35d93ade08367b58d87f74bff1d3374087b265f2",
       },
-    });
+    })
+      .then((resp) => resp.json())
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => console.log(error));
   }, []);
 
   return (
