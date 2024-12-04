@@ -36,8 +36,8 @@ function App() {
         < ArticleList articles = {articles}/>
         }></Route>
 
-        <Route path="/articledetails" element = {
-          < ArticleDetails articles = {articles} />
+        <Route path="/articles/:slug" element = {
+          < ArticleDetails />
         }></Route>
       </Routes>
     </div>
