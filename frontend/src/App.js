@@ -1,23 +1,16 @@
-// import logo from "./logo.svg";
-// import FirstComponent from "./components/FirstComponent";
-// import ClassA from "./components/ClassA";
-// // import StateExample from "./components/StateExample";
-// import MapFunc from "./components/MapFunc";
-// import Forms from "./components/Forms";
-// import { Routes, Route } from "react-router-dom";
-// import Navbar from "./components/Navbar";
-// import React from "react";
-// import ComponentA from "./components/ComponentA";
-// import Counter2 from "./components/Counter2";
-// import FetchData from "./components/FetchData";
+import logo from "./logo.svg";
 import "./App.css";
-import ReducerHook from "./components/ReducerHook";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [articles, setArticles] = useState(["Article One", "Article Two"]);
+
   return (
-    <>
-      <ReducerHook />
-    </>
+    <div>
+      {articles.map((article) => {
+        return <h2>{article}</h2>;
+      })}
+    </div>
   );
 }
 
