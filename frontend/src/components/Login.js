@@ -7,14 +7,14 @@ function Login() {
 
 
     return (
-        <div>
+        <div className='container mt-4'>
             <h1>Please Login Here</h1>
 
             <div className='mb-3'>
                 <input type='text' className='form-control'
                 name = 'username' placeholder='Please Enter Username'
                 value = {username}
-                onChange={evt => setUsername.evt.target.value}
+                onChange={evt => setUsername(evt.target.value)}
             />
             
             </div>
@@ -27,6 +27,11 @@ function Login() {
             />
             
             </div>
+
+            <div className='mb-3'>
+                <button className='btn btn-success'>Login</button>
+            </div>
+
         </div>
     )
 }
