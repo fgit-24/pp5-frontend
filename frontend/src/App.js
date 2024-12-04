@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
 import ArticleList from "./components/ArticleList";
+import Navbar from "./components/Navbar";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div>
+      < Navbar />
       < ArticleList articles = {articles}/>
     </div>
   );
