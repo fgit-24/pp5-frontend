@@ -24,7 +24,7 @@ function App() {
     <div>
       {articles.map(article => {
         return (
-        <div>
+        <div key = {article.id}>
           <h2>{article.title}</h2>
           <p>{article.description}</p>
         </div>
