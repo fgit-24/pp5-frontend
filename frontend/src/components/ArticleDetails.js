@@ -7,12 +7,14 @@ function ArticleDetails() {
     const params = useParams()
     const [article, setArticle] = useState({})
     
+    const token = localStorage.getItem('mytoken')
+
     useEffect(() => {
         fetch(`http://127.0.0.1:8000/articles/${params.slug}/`, {
             method: "GET",
             headers: {
               "Content-Type" : "application/json",
-              "Authorization" : "Token 35d93ade08367b58d87f74bff1d3374087b265f2",
+              "Authorization" : `Token ${token}`,
             },
           })
           .then(resp => resp.json())
