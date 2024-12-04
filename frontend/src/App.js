@@ -24,8 +24,9 @@ function App() {
     <div>
       {articles.map(article => {
         return (
-        <div key = {article.id}>
-          <h2>{article.title}</h2>
+        <div className="container mt-3" key = {article.id}>
+          <span className="badge rounded-pill btn btn-success">Author: {article.author}</span>
+          <h2><a className="link-style" href="">{article.title}</a></h2>
           <p>{article.description}</p>
         </div>
         )
