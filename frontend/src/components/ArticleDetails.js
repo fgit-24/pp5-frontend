@@ -21,8 +21,17 @@ function ArticleDetails() {
     }, [params.slug])
 
   return (
-    <div className="container">{article.title}</div>
-  )
+    <div className="container">
+      <h1>{article.title}</h1>
+      <h6>
+        Published {article.published} by <i>{article.author}</i>
+      </h6>
+
+      <br/>
+
+      <p>{article.description}</p>
+    </div>
+  );
 }
 
 export default ArticleDetails

@@ -7,7 +7,7 @@ function ArticleList(props) {
                 return (
                 <div className="container mt-3" key = {article.id}>
                 <span className="badge rounded-pill bg-success">Author: {article.author}</span>
-                <h2><a className="link-style" href="">{article.title}</a></h2>
+                <h2><Link to = {`/article/${article.slug}`} className="link-style">{article.title}</Link></h2>
                 <p>{article.description}</p>
                 </div>
                 )
