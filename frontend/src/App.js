@@ -9,11 +9,13 @@ import ArticleDetails from "./components/ArticleDetails";
 import { useNavigate } from "react-router-dom";
 import AddArticle from "./components/AddArticle";
 import Register from "./components/Register";
+import UpdateArticle from './components/UpdateArticle'
 
 
 function App() {
 
   const [articles, setArticles] = useState([]);
+  const [editArticle, setEditedArticle] = useState('')
 
   const token = localStorage.getItem('mytoken')
   
@@ -63,6 +65,11 @@ function App() {
     setArticles(new_articles)
   }
 
+  const updateBtn = (article) => {
+    setEditedArticle(article)
+
+  }
+
   return (
     <div>
       < Navbar />
@@ -74,7 +81,7 @@ function App() {
         }></Route>
 
         <Route path="/article/:slug" element = {
-          < ArticleDetails />
+          < ArticleDetails updateBtn = {updateBtn}/>
         }></Route>
 
         <Route path="/add" element = {
@@ -85,6 +92,10 @@ function App() {
           <Register/>
         }></Route>
 
+        <Route path='/update' element = {
+          <UpdateArticle article = {editArticle} updatedData = {updatedData}/>
+        }></Route>
+      
       </Routes>
     </div>
   );

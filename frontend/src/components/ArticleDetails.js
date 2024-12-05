@@ -37,6 +37,10 @@ function ArticleDetails() {
 
     }, [token])
 
+    const updateBtn = (article) => {
+      props.updateBtn(article)
+    }
+
 
   return (
     <div className="container">
@@ -51,7 +55,7 @@ function ArticleDetails() {
       {req.username === article.author ?
       <div>
       <button className='btn btn-danger mx-3 mt-3'>Delete</button>
-      <button className='btn btn-success mx-3 mt-3'>Update</button>
+      <Link to = "/update"><button onClick={() => updateBtn(article)} className='btn btn-success mx-3 mt-3'>Update</button></Link>
       </div>
       :
 

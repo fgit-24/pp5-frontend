@@ -54,3 +54,5 @@ function UpdateArticle(props) {
     </div>
     )
 }
+
+export default UpdateArticle
