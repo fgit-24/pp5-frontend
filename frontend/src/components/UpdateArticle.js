@@ -1,13 +1,28 @@
 import React, {useState, useEffect} from 'react';
 import APIService from '../components/APIService';
+import {useNavigate} from 'react-router-dom'
 
 
 function UpdateArticle(props) {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
 
+    const token = localStorage.getItem('mytoken')
+
+    let navigate = useNavigate()
+
+    useEffect(() => {
+        setTitle(props.article.title)
+        setDescription(props.article.description)        
+    }, [props.article])
+
     const updateArticle = () => {
-        APIService.updateArticle()
+        APIService.updateArticle(props.article.slug, {title, description}, token)
+        .then(resp => {
+            props.updateArticle(resp)
+            navigate('/articles')
+        })
+        .catch(error => console.log(error))
     }
 
     return (
