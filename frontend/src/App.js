@@ -6,12 +6,16 @@ import Navbar from "./components/Navbar";
 import {Routes, Route} from 'react-router-dom';
 import Login from "./components/Login";
 import ArticleDetails from "./components/ArticleDetails";
+import { useNavigate } from "react-router-dom";
+
 
 function App() {
 
   const [articles, setArticles] = useState([]);
 
   const token = localStorage.getItem('mytoken')
+  
+  let navigate = useNavigate()
 
   useEffect(() => {
     fetch("http://127.0.0.1:8000/articles/", {
@@ -26,7 +30,16 @@ function App() {
         setArticles(result)
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [token])
+
+
+  useEffect(() => {
+    if(!token) {
+      navigate('/')
+      return;
+    }
+  
+  }, [token])
 
   return (
     <div>
