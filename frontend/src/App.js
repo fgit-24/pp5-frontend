@@ -42,6 +42,12 @@ function App() {
   
   }, [token])
 
+
+  const insertedArticle = (article) => {
+    const new_article = [...articles, article]
+    setArticles(new_article)
+  }
+
   return (
     <div>
       < Navbar />
@@ -57,7 +63,8 @@ function App() {
         }></Route>
 
         <Route path="/add" element = {
-          < AddArticle />
+          < AddArticle insertedArticle = {insertedArticle}/>
+
         }></Route>
 
       </Routes>
