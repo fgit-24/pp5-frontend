@@ -51,6 +51,18 @@ function App() {
     setArticles(new_article)
   }
 
+  const updatedData = (article) => {
+    const new_articles = articles.map(myarticle => {
+      if(myarticle.slug === article.slug) {
+        return article
+      } else {
+        return myarticle
+      }
+    })
+
+    setArticles(new_articles)
+  }
+
   return (
     <div>
       < Navbar />

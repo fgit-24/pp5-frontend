@@ -19,7 +19,7 @@ function UpdateArticle(props) {
     const updateArticle = () => {
         APIService.updateArticle(props.article.slug, {title, description}, token)
         .then(resp => {
-            props.updateArticle(resp)
+            props.updatedData(resp)
             navigate('/articles')
         })
         .catch(error => console.log(error))
