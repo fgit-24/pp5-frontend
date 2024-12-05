@@ -12,7 +12,7 @@ function Register() {
     let navigate = useNavigate()
 
     const register = () => {
-        APIService.RegisterUser({username, email,password1,password2})
+        APIService.RegisterUser({username, email, password1, password2})
         .then(() => {
             navigate('/')
         })
