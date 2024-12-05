@@ -14,12 +14,13 @@ function AddArticle() {
                 <input type='text' className='form-control'
                 placeholder='Please Enter a Title'
                 value={title}
-                onChange={evt = evt.target.value}
+                onChange={evt =>  setTitle(evt.target.value)}
                 />
             </div>
             
             <div className='mb-3'>
                 <textarea className='form-control'
+                rows = "5"
                 value = {description}
                 onChange = {evt => setDescription(evt.target.value)}
 

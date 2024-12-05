@@ -7,6 +7,7 @@ import {Routes, Route} from 'react-router-dom';
 import Login from "./components/Login";
 import ArticleDetails from "./components/ArticleDetails";
 import { useNavigate } from "react-router-dom";
+import AddArticle from "./components/AddArticle";
 
 
 function App() {
@@ -54,6 +55,11 @@ function App() {
         <Route path="/article/:slug" element = {
           < ArticleDetails />
         }></Route>
+
+        <Route path="/add" element = {
+          < AddArticle />
+        }></Route>
+
       </Routes>
     </div>
   );
