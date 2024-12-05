@@ -24,4 +24,17 @@ export default class APIService {
         })
         .then(resp => resp.json())
     }
+
+    static UpdateArticle(artlice_slug, body, token) {
+        fetch (`http://127.0.0.1:8000/articles/${article_slug}/`, {
+            method:'PUTs',
+            headers: {
+              'Content-Type':'application/json',
+              'Authorization':`Token ${token}`
+            },
+            body:JSON.stringify(body)
+        })
+        .then(resp => resp.json())
+    }
+
 }
