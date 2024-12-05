@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import ArticleDetails from "./components/ArticleDetails";
 import { useNavigate } from "react-router-dom";
 import AddArticle from "./components/AddArticle";
+import Register from "./components/Register";
 
 
 function App() {
@@ -66,7 +67,10 @@ function App() {
 
         <Route path="/add" element = {
           < AddArticle insertedArticle = {insertedArticle}/>
+        }></Route>
 
+        <Route path="/register" element = {
+          <Register/>
         }></Route>
 
       </Routes>

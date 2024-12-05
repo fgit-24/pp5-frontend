@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import APIService from '../APIService'
+import APIService from './APIService'
 import {useNavigate} from 'react-router-dom'
 
 function AddArticle(props) {
