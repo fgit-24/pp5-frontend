@@ -13,6 +13,9 @@ export default function Navbar() {
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
+      
+      {token ? 
+      <>
       <li className="nav-item active">
         <Link to = "/articles" className="nav-link">Home<span class="sr-only"></span></Link>
       </li>
@@ -22,12 +25,17 @@ export default function Navbar() {
       <li className="nav-item">
         <Link className="nav-link" >Logout</Link>
       </li>
+      </>
+        :
+        <>
       <li className="nav-item">
         <Link className="nav-link">Login</Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link">Register</Link>
       </li>
+        </>
+        }
     </ul>
   </div>
   </div>
