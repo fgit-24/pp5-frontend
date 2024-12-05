@@ -40,6 +40,8 @@ function App() {
       return;
     }
   
+    navigate('/articles')
+
   }, [token])
 
 
