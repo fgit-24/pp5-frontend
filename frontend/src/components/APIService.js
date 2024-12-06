@@ -39,7 +39,7 @@ export default class APIService {
 
 
     static DeleteArticle(article_slug, token) {
-        return fetch(`https://blogrestapi1.herokuapp.com/articles/${article_slug}/`, {
+        return fetch(`http://127.0.0.1:8000/articles/${article_slug}/`, {
             method:"DELETE",
             headers: {
                 'Content-Type':'application/json',

@@ -2,6 +2,8 @@ import React from 'react'
 import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import APIService from './APIService';
+import { useNavigate } from 'react-router-dom';
 
 
 function ArticleDetails(props) {
@@ -10,6 +12,8 @@ function ArticleDetails(props) {
     const [req, setReq] = useState('')
     
     const token = localStorage.getItem('mytoken')
+
+    let navigate = useNavigate()
 
     useEffect(() => {
         fetch(`http://127.0.0.1:8000/articles/${params.slug}/`, {
@@ -43,6 +47,16 @@ function ArticleDetails(props) {
   }
 
 
+  const deleteBtn = (article) => {
+    APIService.DeleteArticle(article.slug, token)
+    .then(() => {
+      props.deleteBtn(article);
+      navigate('/articles')
+    })
+    .catch(error => console.log(error))
+  }
+
+
   return (
     <div className = "container mt-4">
 
@@ -57,7 +71,7 @@ function ArticleDetails(props) {
       <p>{article.description}</p>
       {req.username === article.author ?
       <div>
-      <button className='btn btn-danger mx-3 mt-3'>Delete</button>
+      <Link to = "/delete"><button onClick={() => deleteBtn(article)} className='btn btn-danger mx-3 mt-3'>Delete</button></Link>
       <Link to = "/update"><button onClick={() => updateBtn(article)} className='btn btn-success mx-3 mt-3'>Update</button></Link>
       </div>
       :
