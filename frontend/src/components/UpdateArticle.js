@@ -16,13 +16,16 @@ function UpdateArticle(props) {
         setDescription(props.article.description)        
     }, [props.article])
 
+    
     const updateArticle = () => {
-        APIService.updateArticle(props.article.slug, {title, description}, token)
+        APIService.UpdateArticle(props.article.slug , {title, description}, token)
         .then(resp => {
             props.updatedData(resp)
             navigate('/articles')
+            
         })
         .catch(error => console.log(error))
+
     }
 
     return (

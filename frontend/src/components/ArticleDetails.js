@@ -1,9 +1,10 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-function ArticleDetails() {
+function ArticleDetails(props) {
     const params = useParams()
     const [article, setArticle] = useState({})
     const [req, setReq] = useState('')
@@ -39,17 +40,19 @@ function ArticleDetails() {
 
     const updateBtn = (article) => {
       props.updateBtn(article)
-    }
+  }
 
 
   return (
-    <div className="container">
-      <h1>{article.title}</h1>
-      <h6>
-        Published {article.published} by <i>{article.author}</i>
-      </h6>
+    <div className = "container mt-4">
 
-      <br/>
+    <h1>{article.title}</h1>
+    <h6>
+        Published {article.published} by <i>{article.author}</i>
+
+    </h6>
+
+    <br/>
 
       <p>{article.description}</p>
       {req.username === article.author ?
