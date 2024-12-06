@@ -92,7 +92,7 @@ function App() {
         }></Route>
 
         <Route path="/article/:slug" element = {
-          < ArticleDetails updateBtn = {updateBtn}/>
+          < ArticleDetails updateBtn = {updateBtn} deleteBtn = {deleteBtn}/>
         }></Route>
 
         <Route path="/add" element = {
