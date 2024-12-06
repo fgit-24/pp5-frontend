@@ -108,6 +108,10 @@ function App() {
           <UpdateArticle article = {editArticle} updatedData = {updatedData}/>
         }></Route>
       
+      <Route path="/contact" element = {
+          <ContactForm/>
+        }></Route>
+
       </Routes>
     </div>
   );
