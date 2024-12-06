@@ -37,4 +37,15 @@ export default class APIService {
         .then(resp => resp.json())
     }
 
+
+    static DeleteArticle(article_slug, token) {
+        return fetch(`https://blogrestapi1.herokuapp.com/articles/${article_slug}/`, {
+            method:"DELETE",
+            headers: {
+                'Content-Type':'application/json',
+                'Authorization':`Token ${token}`
+              }
+    })
+    }
+
 }
