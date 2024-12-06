@@ -16,7 +16,7 @@ function ArticleDetails(props) {
     let navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`https://djrest-f-bfd9b0bcf48e.herokuapp.com/${params.slug}/`, {
+        fetch(`https://djrest-f-bfd9b0bcf48e.herokuapp.com/articles/${params.slug}/`, {
             method: "GET",
             headers: {
               "Content-Type" : "application/json",
