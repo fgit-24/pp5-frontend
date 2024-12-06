@@ -71,8 +71,8 @@ function ArticleDetails(props) {
       <p>{article.description}</p>
       {req.username === article.author ?
       <div>
-      <Link to = "/delete"><button onClick={() => deleteBtn(article)} className='btn btn-danger mx-3 mt-3'>Delete</button></Link>
-      <Link to = "/update"><button onClick={() => updateBtn(article)} className='btn btn-success mx-3 mt-3'>Update</button></Link>
+      <Link to = "/delete"><button onClick={() => deleteBtn(article)} className='btn btn-light mx-2 mt-3'>Delete</button></Link>
+      <Link to = "/update"><button onClick={() => updateBtn(article)} className='btn btn-dark mx-2 mt-3'>Update</button></Link>
       </div>
       :
 

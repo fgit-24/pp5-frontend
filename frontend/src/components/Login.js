@@ -67,7 +67,7 @@ function Login() {
         
             </div>
 
-            <div className = "mb-3">
+            <div className = "mb-3 text-end">
 
                 <button onClick = {login} className = "btn btn-success">Login</button>
 
