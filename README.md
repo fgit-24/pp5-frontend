@@ -1,6 +1,6 @@
 # Blog 
 
-![Am I responsive](01-responsive.png)
+![Am I responsive](documentation/screenshots/01-responsive.png)
 
 
 ## Introduction
@@ -223,31 +223,31 @@ I referenced these during my development, although some adjustments were made th
 
 Home Desktop
 
-![Home Desktop](documentation\wireframes\01-wirehome.jpg)
+![Home Desktop](documentation/wireframes/01-wirehome.jpg)
 
 Home Tablet
 
-![Home Tablet](documentation\wireframes\04-wiretablet.jpg)
+![Home Tablet](documentation/wireframes/04-wiretablet.jpg)
 
 Home Mobile
 
-![Home Mobile](documentation\wireframes\05-wiremobile.jpg)
+![Home Mobile](documentation/wireframes/05-wiremobile.jpg)
 
 Sign In
 
-![Sign in](documentation\wireframes\02-wirelogin.jpg)
+![Sign in](documentation/wireframes/02-wirelogin.jpg)
 
 Register
 
-![Register](documentation\wireframes\06-wireregister.jpg)
+![Register](documentation/wireframes/06-wireregister.jpg)
 
 Article Detail
 
-![Article Detail](documentation\wireframes\07-wiredetail.jpg)
+![Article Detail](documentation/wireframes/07-wiredetail.jpg)
 
 Contact
 
-![Contact](documentation\wireframes\03-wirecontact.jpg)
+![Contact](documentation/wireframes/03-wirecontact.jpg)
 
 
 
@@ -258,38 +258,38 @@ The primary font I used is "Segoe Ui," chosen for its elegant design.
 
 ### Colors
 
-![Home page](documentation\15-colors.png)
+![Home page](documentation/screenshots/15-colors.png)
 
 
 ## Screenshots of Finished Website
 
 Desktop Homepage.
 
-![Home page](documentation\03-home.png)
+![Home page](documentation/screenshots/03-home.png)
 
 Tablet Homepage.
 
-![Home page](documentation\16-tablet.png)
+![Home page](documentation/screenshots/16-tablet.png)
 
 Mobile Homepage.
 
-![Home page](documentation\17-mobile.png)
+![Home page](documentation/screenshots/17-mobile.png)
 
 Article Detail Page.
 
-![Article Detail](documentation\05-article-detail-edit.png)
+![Article Detail](documentation/screenshots/05-article-detail-edit.png)
 
 Add Article
 
-![Add Article](documentation\11-add-article.png)
+![Add Article](documentation/screenshots/11-add-article.png)
 
 Login
 
-![Login](documentation\07-login.png)
+![Login](documentation/screenshots/07-login.png)
 
 Contact Page
 
-![Contact](documentation\08-contact.png)
+![Contact](documentation/screenshots/08-contact.png)
 
 
 
@@ -299,15 +299,15 @@ Contact Page
 
   This helps make navigation easier.
 
-![Navbar](documentation\14-navbar.png)
+![Navbar](documentation/screenshots/14-navbar.png)
 
 - The responsive navbar expands on larger screens, minimizing clicks and enhancing site navigation.
 
-![Menu Dropdown](documentation\10-dropdown.png)
+![Menu Dropdown](documentation/screenshots/10-dropdown.png)
 
 Feedback Message
 
-![Message](documentation\02-message.png)
+![Message](documentation/screenshots/02-message.png)
 
 
 
@@ -443,19 +443,19 @@ My JavaScript and JSX was validated using [eslint](https://eslint.org/docs/lates
 Below are the Lighthouse reports for my pages:
 
 - **Home:**
-  ![Home lighthouse](documentation\lighthouse\01-lighthome.png)
+  ![Home lighthouse](documentation/lighthouse/01-lighthome.png)
 
 - **Article Detail:**
-  ![Article detail lighthouse](documentation\lighthouse\02-lightarticle-detail.png)
+  ![Article detail lighthouse](documentation/lighthouse/02-lightarticle-detail.png)
 
 - **Article Add:**
-  ![Article add lighthouse](documentation\lighthouse\03-lightadd-article.png)
+  ![Article add lighthouse](documentation/lighthouse/03-lightadd-article.png)
 
 - **Login:**
-  ![Login lighthouse](documentation\lighthouse\04-lightlogin.png)
+  ![Login lighthouse](documentation/lighthouse/04-lightlogin.png)
 
 - **Register:**
-  ![Register lighthouse](documentation\lighthouse\05-lightregister.png)
+  ![Register lighthouse](documentation/lighthouse/05-lightregister.png)
 
 ### Responsiveness
 
@@ -656,7 +656,7 @@ Finally the issue for each user story in my project has been closed if the accep
 
 I couldn't fetch my url data!
 
-![Bug](documentation\12-rest-auth.png)
+![Bug](documentation/screenshots/12-rest-auth.png)
 
 
 ## Bug Fixes
@@ -665,7 +665,7 @@ It took me a while to figure out, that I had to adjust my address, because rest-
 
 ### Bug Fix
 
-![Bug](documentation\13-updated-rest-auth.png)
+![Bug](documentation/screenshots/13-updated-rest-auth.png)
 
 
 ### Projects
