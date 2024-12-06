@@ -27,6 +27,9 @@ function Navbar() {
           onClick = {() => localStorage.clear()}
           >Logout</Link>
         </li>
+        <li className="nav-item">
+          <Link to = "/contact" className="nav-link ">Contact</Link>
+        </li>
         </>
           :
           <>
@@ -36,6 +39,9 @@ function Navbar() {
 
         <li className="nav-item">
           <Link to = "/register" className="nav-link ">Register</Link>
+        </li>
+        <li className="nav-item">
+          <Link to = "/contact" className="nav-link ">Contact</Link>
         </li>
         </>
         }
