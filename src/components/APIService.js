@@ -1,7 +1,7 @@
 export default class APIService {
 
     static InsertArticle(body, token) {
-        return fetch('http://127.0.0.1:8000/articles/', {
+        return fetch('https://djrest-f-bfd9b0bcf48e.herokuapp.com/articles/', {
             method:'POST',
             headers: {
               'Content-Type':'application/json',
