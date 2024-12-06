@@ -221,15 +221,33 @@ The wireframes below were created using [Figma](https://www.figma.com/).
 
 I referenced these during my development, although some adjustments were made throughout the process.
 
-![Home]()
+Home Desktop
 
-![Sign in]()
+![Home Desktop](documentation\wireframes\01-wirehome.jpg)
 
-![Register]()
+Home Tablet
 
-![Signed in]()
+![Home Tablet](documentation\wireframes\04-wiretablet.jpg)
 
-![Contact]()
+Home Mobile
+
+![Home Mobile](documentation\wireframes\05-wiremobile.jpg)
+
+Sign In
+
+![Sign in](documentation\wireframes\02-wirelogin.jpg)
+
+Register
+
+![Register](documentation\wireframes\06-wireregister.jpg)
+
+Article Detail
+
+![Article Detail](documentation\wireframes\07-wiredetail.jpg)
+
+Contact
+
+![Contact](documentation\wireframes\03-wirecontact.jpg)
 
 
 
@@ -245,9 +263,17 @@ The primary font I used is "Segoe Ui," chosen for its elegant design.
 
 ## Screenshots of Finished Website
 
-Homepage with user signed in.
+Desktop Homepage.
 
 ![Home page](documentation\03-home.png)
+
+Tablet Homepage.
+
+![Home page](documentation\16-tablet.png)
+
+Mobile Homepage.
+
+![Home page](documentation\17-mobile.png)
 
 Article Detail Page.
 
@@ -417,19 +443,19 @@ My JavaScript and JSX was validated using [eslint](https://eslint.org/docs/lates
 Below are the Lighthouse reports for my pages:
 
 - **Home:**
-  ![Home lighthouse]()
+  ![Home lighthouse](documentation\lighthouse\01-lighthome.png)
 
-- **Post Detail:**
-  ![Post detail lighthouse]()
+- **Article Detail:**
+  ![Article detail lighthouse](documentation\lighthouse\02-lightarticle-detail.png)
 
-- **Post Update:**
-  ![Post edit lighthouse]()
+- **Article Add:**
+  ![Article add lighthouse](documentation\lighthouse\03-lightadd-article.png)
+
+- **Login:**
+  ![Login lighthouse](documentation\lighthouse\04-lightlogin.png)
 
 - **Register:**
-  ![Register lighthouse]()
-
-- **Sign In:**
-  ![Sign in lighthouse]()
+  ![Register lighthouse](documentation\lighthouse\05-lightregister.png)
 
 ### Responsiveness
 
