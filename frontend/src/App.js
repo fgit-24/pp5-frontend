@@ -70,6 +70,17 @@ function App() {
 
   }
 
+  const deleteBtn = (article) => {
+    const new_articles = articles.filter(myarticle => {
+      if(myarticle.slug === article.slug) {
+        return false;
+      }
+      return true;
+    })
+
+    setArticles(new_articles)
+  }
+
   return (
     <div>
       < Navbar />
