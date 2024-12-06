@@ -16,7 +16,7 @@ function ArticleDetails(props) {
     let navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/articles/${params.slug}/`, {
+        fetch(`https://djrest-f-bfd9b0bcf48e.herokuapp.com/${params.slug}/`, {
             method: "GET",
             headers: {
               "Content-Type" : "application/json",
@@ -29,7 +29,7 @@ function ArticleDetails(props) {
     }, [params.slug, token])
 
     useEffect(() => {
-      fetch('http://127.0.0.1:8000/dj-rest-auth/user/', {
+      fetch('https://djrest-f-bfd9b0bcf48e.herokuapp.com/dj-rest-auth/user/', {
         method: "GET",
         headers: {
           "Content-Type" : "application/json",

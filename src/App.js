@@ -23,7 +23,7 @@ function App() {
   let navigate = useNavigate()
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/articles/", {
+    fetch("https://djrest-f-bfd9b0bcf48e.herokuapp.com/articles/", {
       method: "GET",
       headers: {
         "Content-Type" : "application/json",

@@ -10,7 +10,7 @@ function Login() {
 
 
     const login = () => {
-        fetch('http://127.0.0.1:8000/dj-rest-auth/login/', {
+        fetch('https://djrest-f-bfd9b0bcf48e.herokuapp.com/dj-rest-auth/login/', {
             method:'POST',
             headers: {
                 'Content-Type':'application/json'

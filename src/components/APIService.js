@@ -15,7 +15,7 @@ export default class APIService {
 
 
     static RegisterUser(body) {
-        return fetch('http://127.0.0.1:8000/dj-rest-auth/registration/' , {
+        return fetch('https://djrest-f-bfd9b0bcf48e.herokuapp.com/dj-rest-auth/registration/' , {
             method:'POST',
             headers: {
               'Content-Type':'application/json',
@@ -26,7 +26,7 @@ export default class APIService {
     }
 
     static UpdateArticle(article_slug, body, token) {
-        return fetch (`http://127.0.0.1:8000/articles/${article_slug}/`, {
+        return fetch (`https://djrest-f-bfd9b0bcf48e.herokuapp.com/articles/${article_slug}/`, {
             method:'PUT',
             headers: {
               'Content-Type':'application/json',
@@ -39,7 +39,7 @@ export default class APIService {
 
 
     static DeleteArticle(article_slug, token) {
-        return fetch(`http://127.0.0.1:8000/articles/${article_slug}/`, {
+        return fetch(`https://djrest-f-bfd9b0bcf48e.herokuapp.com/articles/${article_slug}/`, {
             method:"DELETE",
             headers: {
                 'Content-Type':'application/json',
