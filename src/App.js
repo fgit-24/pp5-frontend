@@ -88,6 +88,8 @@ function App() {
       <Routes>
         <Route path="/" element = {<Login/>}></Route>
         
+        <Route path="/login" element = {<Login/>}></Route>
+
         <Route path="/articles" element = {
         < ArticleList articles = {articles}/>
         }></Route>
