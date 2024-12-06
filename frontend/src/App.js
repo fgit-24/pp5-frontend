@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import AddArticle from "./components/AddArticle";
 import Register from "./components/Register";
 import UpdateArticle from './components/UpdateArticle'
+import ContactForm from "./components/Contact";
 
 
 function App() {
@@ -37,15 +38,15 @@ function App() {
   }, [token])
 
 
-  useEffect(() => {
-    if(!token) {
-      navigate('/')
-      return;
-    }
+  // useEffect(() => {
+  //   if(!token) {
+  //     navigate('/')
+  //     return;
+  //   }
   
-    navigate('/articles')
+  //   navigate('/articles')
 
-  }, [token])
+  // }, [token])
 
 
   const insertedArticle = (article) => {
