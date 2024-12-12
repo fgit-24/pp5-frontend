@@ -1,8 +1,5 @@
 # Blog 
 
-![Am I responsive](documentation/screenshots/01-responsive.png)
-
-
 ## Introduction
 
 [Blog](https://frontend-f-2bf7aea4b103.herokuapp.com) is a blog-platform for sharing ideas, visions and articles.
@@ -380,8 +377,6 @@ The README is written in Markdown.
 
 - **React-bootstrap**: Utilized for its comprehensive set of components, styles, and user-friendly interface.
 
-- **Axios**: Employed for making requests to my API.
-
 - **React-router-dom**: Used for routing capabilities and additional features such as `searchParams`, `useLocation`, and `useNavigate`. This was particularly beneficial for implementing toast notifications and navigating between pages.
 
 
@@ -409,7 +404,7 @@ This section outlines the steps I took to deploy this React project.
 
 ### Cloning and Forking
 
-If you wish to clone or fork this project, you can do so from my [GitHub repository](https://Blog -frontend-871b3764ee9c.herokuapp.com/).
+If you wish to clone or fork this project, you can do so from my [GitHub repository](https://github.com/fgit-24/pp5-frontend/).
 
 Please note that this is only the front-end; you will need a back-end to run the application.
 
@@ -425,7 +420,6 @@ It’s advisable to start by setting up a virtual environment to avoid conflicts
 
 - Ensure you are in the root directory, then run `npm install`.
 
-- In the `src` directory, open `axiosDefaults.js` and update `axios.defaults.baseURL` to your own API URL.
 
 
 ## Testing
