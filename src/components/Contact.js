@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactForm = () => {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -19,26 +17,28 @@ const ContactForm = () => {
     };
 
     try {
-
-      const response = await fetch('https://djrest-f-bfd9b0bcf48e.herokuapp.com/contact/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(contactData),
-      });
+      const response = await fetch(
+        "https://djrest-f-bfd9b0bcf48e.herokuapp.com/contact/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(contactData),
+        }
+      );
 
       if (response.ok) {
-        setSuccessMessage('Contact form submitted successfully!');
-        setName('');
-        setEmail('');
-        setMessage('');
+        setSuccessMessage("Contact form submitted successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
       } else {
         const data = await response.json();
-        setError(data.detail || 'Something went wrong');
+        setError(data.detail || "Something went wrong");
       }
     } catch (error) {
-      setError('Error: Unable to send message');
+      setError("Error: Unable to send message");
     }
   };
 
@@ -46,7 +46,9 @@ const ContactForm = () => {
     <div className="container mt-5">
       <h2>Contact Us</h2>
 
-      {successMessage && <div className="alert alert-success">{successMessage}</div>}
+      {successMessage && (
+        <div className="alert alert-success">{successMessage}</div>
+      )}
       {error && <div className="alert alert-danger">{error}</div>}
 
       <form onSubmit={handleSubmit}>

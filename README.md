@@ -58,7 +58,6 @@ The goal is to foster a sharing community where you can either contribute conten
   - [Bug Fixes](#bug-fixes)
     - [Bug Fix](#bug-fix)
     - [Projects](#projects)
-    - [Websites](#websites)
   - [Credits](#credits)
 
 
@@ -665,11 +664,6 @@ It took me a while to figure out, that I had to adjust my address, because rest-
 ### Projects
 
 I took a course by [Udemy Course](https://www.udemy.com/course/django-django-rest-framework-build-rest-api-in-python/learn/lecture/29085468#overview). But my project has major changes and additions, like for example the contact page.
-
-### Websites
-
-[Am I responsive](https://ui.dev/amiresponsive) was utilized for generating the images of my website, which are placed at the top of this README.
-
 
 ## Credits
 
